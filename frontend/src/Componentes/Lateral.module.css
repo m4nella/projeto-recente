@@ -1,0 +1,91 @@
+.conteiner {
+    background-color: #DAD3BE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #DAD3BE;
+}
+
+.imagemCabecalho {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -2.5rem;
+}
+
+.perfil p {
+    font-size: 1.25rem;
+    font-weight: 600; /* Ajuste o valor */
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #475A4E;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.conteiner section {
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bege);
+    padding: 1rem;
+    margin-top: -75px; /* Ajuste para posicionar abaixo do cabeçalho */
+    z-index: 1;
+}
+
+.menu .botao {
+    margin: 0 10px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--bege);
+    color: #475A4E;
+    font-weight: 600;
+    margin-bottom: 18px;
+    border: 2px solid #475A4E;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    gap: .5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    transition: color 0.1s background-color 0.1s;
+}
+
+.botao:hover {
+    background-color: #475A4E;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 992px) {
+    .menu {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .menu .botao {
+        margin: 5px 0;
+    }
+}

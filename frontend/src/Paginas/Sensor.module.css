@@ -1,0 +1,86 @@
+.conteiner {
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    color: black;
+    align-self: center;
+
+}
+
+table {
+    background-color: #B7B597;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid #6B8A7A;
+
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left:50px ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: auto;
+
+}
+
+th, td {
+    border: 1px solid #B7B597; /* Define as bordas para células */
+    padding: 8px; /* Adiciona padding às células */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+tr {
+    border: 1px solid black; /* Define as bordas para as linhas */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+th {
+    background-color: #DAD3BE; /* Cor de fundo para cabeçalhos */
+    color: black; /* Cor do texto dos cabeçalhos */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #DAD3BE; /* Alterna a cor de fundo para linhas pares */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.button.alterar {
+    background-color: #6B8A7A; /* Verde */
+    color: white;
+}
+
+.button.alterar:hover {
+    background-color: #475A4E; /* Verde escuro */
+}
+
+.button.deletar {
+    background-color: #853a34; /* Vermelho */
+    color: white;
+}
+
+.button.deletar:hover {
+    background-color: #524e4e; /* Vermelho escuro */
+}

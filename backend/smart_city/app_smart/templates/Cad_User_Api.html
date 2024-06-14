@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário por API</title>
+    <style>
+        :root{
+            --cor_fundo : rgb(192, 163, 163);
+            --cor_hover : rgb(150, 104, 104);
+            --cor_primaria : rgb(252, 249, 249);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor_fundo);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: var(--cor_primaria);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            background-color: rgb(241, 7, 7);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(189, 7, 7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form id="userForm">
+            <div class="form-content">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required><br>
+            </div>
+            <div class="form-content">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br>
+            </div>
+            <div class="form-content">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required><br>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            var formData = new FormData();
+            formData.append('username', username);
+            formData.append('email', email);
+            formData.append('password', password);
+
+            fetch('/api/create_user/', {  // Rota ajustada aqui
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Basic ' + btoa('smart_user:123456')
+                },
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro ao cadastrar usuário');
+                }
+                alert('Usuário cadastrado com sucesso!');
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                alert('Erro ao cadastrar usuário');
+            });
+        });
+    </script>
+</body>
+</html>

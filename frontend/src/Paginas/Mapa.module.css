@@ -1,0 +1,25 @@
+/* App.css */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .map-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* leaflet.css - Copie e cole este conteúdo se você não estiver usando a importação direta do pacote leaflet */
+  .leaflet-container {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .leaflet-popup-content-wrapper {
+    font-size: 14px;
+  }
+  

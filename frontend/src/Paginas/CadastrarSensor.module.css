@@ -1,0 +1,47 @@
+.conteiner {
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: black;
+    font-size:24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #B7B597;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.campo {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border-width: 1px; /* Ajuste a grossura aqui */
+    border-style: solid; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+
+
+}
+
+.botao {
+    background-color: var(--marrom-escuro);
+    color: var(--cinza-claro);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    
+}
+

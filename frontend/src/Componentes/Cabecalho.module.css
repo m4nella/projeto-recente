@@ -1,0 +1,17 @@
+.conteiner{
+    background-color: #766148;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.conteiner p {
+    font-size: 3.5rem;
+    color: white;
+    margin: 0 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
+    
+}

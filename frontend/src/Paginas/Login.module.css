@@ -1,0 +1,59 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza-escuro);
+}
+
+.titulo {
+    color: var(--roxo-escuro);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.campo {
+    background-color: var(--cinza-claro);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border-width: 1px; /* Ajuste a grossura aqui */
+    border-style: solid; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+
+}
+
+.botao {
+    background-color: #475A4E;
+    color: #DAD3BE;
+    padding: 10px;
+    border-radius: 3px;
+    border-width: 1px; /* Ajuste a grossura aqui */
+    border-style: solid; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.mensagem {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: -6px;
+    margin-bottom: 1rem;  
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    color: rgb(129, 33, 33); 
+}

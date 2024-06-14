@@ -1,0 +1,33 @@
+
+
+:root{
+  --verde-escuro: #6B8A7A;
+  --roxo-escuro:#475A4E;
+  /* roxo claro pode ser a fonte (preta k) */
+  --marrom-escuro: #766148;
+  --bege: #DAD3BE;
+}
+
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #DAD3BE;
+  font-family: "Dancing Script", cursive; 
+}
+
+input{
+  font-family: "Dancing Script", cursive; 
+  
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
