@@ -49,8 +49,8 @@ function MyTabs() {
             />
  
             <Tab.Screen
-                name="Read"
-                component={Read}
+                name="Mapa"
+                component={Mapa}
                 options={{
                     headerShown:false,
                     tabBarIcon: ({ size, color }) => (
