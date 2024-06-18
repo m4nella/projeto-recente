@@ -1,0 +1,39 @@
+.conteiner {
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    color: var(--roxo-claro);
+    align-self: center;
+}
+
+table {
+    background-color: var(--cinza-claro);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid var(--roxo-claro);
+
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left:50px ;
+
+}
+
+th, td {
+    border: 1px solid var(--roxo-claro); /* Define as bordas para células */
+    padding: 8px; /* Adiciona padding às células */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+tr {
+    border: 2px solid var(--roxo-claro); /* Define as bordas para as linhas */
+}
+
+

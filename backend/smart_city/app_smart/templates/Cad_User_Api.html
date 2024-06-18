@@ -89,7 +89,7 @@
             formData.append('email', email);
             formData.append('password', password);
 
-            fetch('/api/create_user/', {  // Rota ajustada aqui
+            fetch('https:127.0.0.1:8000/api/create_user/', {  // Rota ajustada aqui
                 method: 'POST',
                 headers: {
                     'Authorization': 'Basic ' + btoa('smart_user:123456')
